@@ -1,0 +1,34 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    'upIdent upIdent upIdent'
+    'leftIdent main rightIdent'
+    'bottomIdent bottomIdent bottomIdent';
+    grid-template-rows: 5% 1fr 5%;
+    grid-template-columns: 25% 1fr 25%;
+    grid-gap: 12px;
+    height: 100vh;
+    margin: 0;
+}
+
+.upIdent {
+    grid-area: upIdent;
+}
+
+.leftIdent {
+    grid-area: leftIdent;
+}
+
+.main {
+    grid-area: main;
+    background: rgb(248, 248, 248);
+    border: 12px solid rgb(235, 235, 235);
+}
+
+.rightIdent {
+    grid-area: rightIdent;
+}
+
+.bottomIdent {
+    grid-area: bottomIdent;
+}

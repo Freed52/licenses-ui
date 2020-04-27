@@ -1,0 +1,207 @@
+.boxes {
+    display: grid;
+    grid-template-areas: 
+    'plansBox'
+    'quantityBox'
+    'comboBox';
+    grid-template-rows: 40% 20% 40%;
+    grid-template-columns: 1fr;
+    height: calc(100% - 4%);
+    margin: 0;
+    padding: 2% 2%;
+}
+
+.boxesContent {
+    padding: 0 12px;
+}
+
+.plans {
+    grid-area: plansBox;
+    padding: 0 3%;
+}
+
+.hovered {
+    position: relative;
+    left: -2vh;
+    width: calc(100%);
+    padding: 0 2vh;
+    background-color:rgb(235, 244, 247);
+    border: 1px solid rgb(187, 217, 227);
+}
+
+.plansItem {
+    display: grid;
+    grid-template-areas: 
+    'plansLabel plansPrise';
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plansItem:not(:nth-child(3)) {
+    padding: 3vh 0;
+}
+
+.plansLabel {
+    grid-area: plansLabel;
+    position: relative;
+    font-size: 3vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.plansLabel input, .plansLabelHovered input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.myRadio {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: calc(100% + 3px);
+    width: 10%;
+    border-radius: 50%;
+    border: 4px solid rgb(218, 218, 218);
+    background-color: rgb(251, 251, 251);
+    cursor: pointer;
+}
+
+.activeRadio {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: calc(100% + 3px);
+    width: 10%;
+    border-radius: 50%;
+    border: 4px solid rgb(52, 100, 142);
+    cursor: pointer;
+}
+
+.myRadio span, .activeRadio span {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 62%;
+    width: 62%;
+    border-radius: 50%;
+    background-color: rgb(2, 148, 191);
+}
+
+.plansTitle {
+    font-family: 'Bebas';
+    letter-spacing: 2px;
+    padding-left: 20%;
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+}
+
+.plansPrise {
+    grid-area: plansPrise;
+    color: rgb(143, 143, 143);
+    text-align: end;
+    align-self: center;
+    font-size: 2vh;
+}
+
+.quantity {
+    grid-area: quantityBox;
+    border: 1px solid rgb(212, 212, 212);
+    border-right: none;
+    border-left: none;  
+}
+
+.quantityRow {
+    width: 100%;
+}
+
+.quantityMiddle {
+    padding-top: 7%;
+    padding-left: calc(33% - 1em);
+}
+
+.quantityMiddle label {
+    color: rgb(49, 49, 49);
+    font-size: 2vh;
+}
+
+.quantityMiddle select {
+    width: 5vw;
+    height: 5vh;
+    margin-left: 1em;
+    border: 2px solid rgb(142, 175, 229);
+    font-size: 2vh;
+}
+
+.combo {
+    grid-area: comboBox;
+}
+
+.comboRow {
+    display: grid;
+    grid-template-areas: 
+    'leftIdent middleCombo rightIdent';
+    grid-template-rows: 1fr;
+    grid-template-columns: 33.33% 1fr 33.33%;
+    height: 100%;
+    margin: 0;
+    padding: 2% 2%;
+}
+
+.leftIdent {
+    grid-area: leftIdent;    
+}
+
+.middleCombo {
+    grid-area: middleCombo;
+    display: grid;
+    grid-template-rows: 25% 25% 1fr;
+    width: 100%; 
+}
+
+.comboTotal {
+    padding-top: 1vh;
+    align-self: center;
+    font-family: 'Bebas';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    font-size: 3vh;
+}
+
+.comboPrise {
+    color: rgb(51, 136, 168);
+}
+
+.comoboBadge {
+    position: relative;
+    top: -1vmin;
+    font-size: 2vmin;
+    color: rgb(51, 136, 168);
+}
+
+.comboButton {
+    width: 100%;
+    height: 75%;
+    color: rgb(225, 246, 226);
+    font-size: 1vw;
+    font-weight: 500;
+    background-color: rgb(51, 168, 69);
+    border-radius: 60px 60px 60px 60px;
+}
+
+.comboInfo {
+    align-self: center;
+    color: rgb(68, 146, 175);
+    text-align: center;
+    font-size: 3vh;
+}
+
+.rightIdent {
+    grid-area: rightIdent;    
+}

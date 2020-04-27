@@ -1,0 +1,17 @@
+.offer {
+    text-align: center;
+}
+
+.offer h3 {
+    font-size: 4vh;
+}
+
+.offerInfo {
+    padding-bottom: 1vh;
+    font-size: 2vh;
+}
+
+.offerInfo span span{
+    color: rgb(245, 0, 0);
+    font-size: 3vh;
+}
